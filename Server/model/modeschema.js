@@ -5,7 +5,7 @@ const { Schema } = mongoose;
 let modelSchema = new Schema({
   name:String,
   gmail:String,
-  age:Number
+  number:Number
 });
 
 const todoSchema = mongoose.model("todoapp", modelSchema);
