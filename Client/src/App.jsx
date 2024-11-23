@@ -11,13 +11,11 @@ import CreateUser from "./CreateUser";
 
 const App = () => {
   let router = createBrowserRouter(
-    createRoutesFromElements([
-      <>
-        <Route path="/" element={<UserComponent />}>
-          <Route path="/UserCreate" element={<CreateUser />}></Route>
-        </Route>
-      </>,
-    ])
+    createRoutesFromElements(
+      <Route path="/" element={<UserComponent />}>
+        <Route path="/UserCreate" element={<CreateUser />}></Route>
+      </Route>
+    )
   );
 
   return <RouterProvider router={router} />;
