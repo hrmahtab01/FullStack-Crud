@@ -8,15 +8,23 @@ import {
 } from "react-router-dom";
 import UserComponent from "./User";
 import CreateUser from "./CreateUser";
+import UpdateUser from "./UpdateUser";
 
 const App = () => {
-  let router = createBrowserRouter(
-    createRoutesFromElements(
-      <Route path="/" element={<UserComponent />}>
-        <Route path="/UserCreate" element={<CreateUser />}></Route>
-      </Route>
-    )
-  );
+  let router = createBrowserRouter([
+    {
+      path: "/",
+      element: <UserComponent />,
+    },
+    {
+      path: "/createuser",
+      element: <CreateUser />,
+    },
+    {
+      path: "/updateuser",
+      element: <UpdateUser />,
+    },
+  ]);
 
   return <RouterProvider router={router} />;
 };

@@ -89,7 +89,7 @@ const UserComponent = () => {
   };
 
   return (
-    <div className="w-[1350px] py-5 bg-teal-500 border rounded-lg shadow-lg mx-auto">
+    <div className="w-[1350px] py-5 bg-teal-500 border rounded-lg shadow-lg mx-auto mt-4 px-4">
       <div className="border-b border-red-800 pb-3">
         <button
           onClick={Handleopencreatetodo}

@@ -4,7 +4,7 @@ const todoSchema = require("./model/modeschema");
 const app = express();
 const cors = require("cors");
 
-dbconnet();
+dbconnet()
 
 app.use(express.json());
 app.use(cors())
